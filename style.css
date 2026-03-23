@@ -50,6 +50,13 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Destaque para a página atual no menu */
+nav ul li a.active {
+    color: var(--accent-color); /* Usa o verde que definimos ou outra cor de sua preferência */
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
 /* Botão de Modo Escuro/Claro */
 .theme-toggle-btn {
     background-color: transparent;
