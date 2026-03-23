@@ -1,0 +1,95 @@
+/* Definição de Cores e Variáveis */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --header-bg: #2c3e50;
+    --header-text: #ffffff;
+    --footer-bg: #f8f9fa;
+    --accent-color: #27ae60;
+}
+
+/* Cores quando o modo escuro está ativo */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --header-bg: #000000;
+    --header-text: #27ae60;
+    --footer-bg: #1a1a1a;
+}
+
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    transition: background-color 0.4s, color 0.4s;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--header-text);
+    font-weight: bold;
+}
+
+/* Botão de Modo Escuro/Claro */
+.theme-toggle-btn {
+    background-color: transparent;
+    border: 2px solid var(--header-text);
+    color: var(--header-text);
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--header-text);
+    color: var(--header-bg);
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--footer-bg);
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Estilo básico para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>André Augusto - Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>André Augusto Quintino Cardoso</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle-btn">Modo Escuro</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou proposta? Preencha o formulário abaixo e entrarei em contato em breve.</p>
+
+            <form id="formContato">
+                <div style="margin-bottom: 15px; display: flex; flex-direction: column;">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui">
+                </div>
+
+              <div style="margin-bottom: 15px; display: flex; flex-direction: column;">
+    <label for="email">Seu E-mail (para resposta):</label>
+    <input type="email" id="email" name="email" placeholder="digite.seu@email.com">
+</div>
+
+                <div style="margin-bottom: 15px; display: flex; flex-direction: column;">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso ajudar?"></textarea>
+                </div>
+
+                <button type="submit" style="cursor: pointer; font-weight: bold; width: 100%;">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section style="margin-top: 30px; border-top: 1px solid #ccc; padding-top: 20px;">
+            <h3>Outros Canais</h3>
+            <p>📍 <strong>Localização:</strong> Campina Grande do Sul, PR</p>
+            <p>📧 <strong>E-mail Profissional:</strong> <a href="mailto:andre.augusto.qc@outlook.com" style="color: var(--text-color);">andre.augusto.qc@outlook.com</a></p>
+            <p>🔗 <strong>GitHub:</strong> <a href="https://github.com/DretoQC" target="_blank" style="color: var(--text-color);">github.com/DretoQC</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>André Augusto | RU: 4383373 &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
